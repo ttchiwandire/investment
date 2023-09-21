@@ -1,0 +1,653 @@
+{
+	"info": {
+		"_postman_id": "5a11d33c-e519-42d8-b7df-03c5260c096b",
+		"name": "Momentum-Invest Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Investors",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/momentum-invest/investors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"momentum-invest",
+						"investors"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get All Investors",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/momentum-invest/investors",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"momentum-invest",
+								"investors"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 21 Sep 2023 13:18:16 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"firstname\": \"Tatenda\",\n        \"lastname\": \"Chiwandire\",\n        \"birthDate\": \"2000-01-01\",\n        \"emailAddress\": \"ttchiwa@gmail.com\",\n        \"address\": \"100 Central Ave Pretoria\",\n        \"mobileNumber\": \"0762077899\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get Investor By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/momentum-invest/investor-details?id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"momentum-invest",
+						"investor-details"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Investor By Id",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/momentum-invest/investor-details?id=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"momentum-invest",
+								"investor-details"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 21 Sep 2023 13:18:24 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"firstname\": \"Tatenda\",\n    \"lastname\": \"Chiwandire\",\n    \"birthDate\": \"2000-01-01\",\n    \"emailAddress\": \"ttchiwa@gmail.com\",\n    \"address\": \"100 Central Ave Pretoria\",\n    \"mobileNumber\": \"0762077899\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Investor By Product Type",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/momentum-invest/investor-by-product-type?productType=RETIREMENT",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"momentum-invest",
+						"investor-by-product-type"
+					],
+					"query": [
+						{
+							"key": "productType",
+							"value": "RETIREMENT"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Investor By Product Type",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/momentum-invest/investor-by-product-type?productType=RETIREMENT",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"momentum-invest",
+								"investor-by-product-type"
+							],
+							"query": [
+								{
+									"key": "productType",
+									"value": "RETIREMENT"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 21 Sep 2023 13:18:33 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"firstname\": \"Tatenda\",\n        \"lastname\": \"Chiwandire\",\n        \"birthDate\": \"2000-01-01\",\n        \"emailAddress\": \"ttchiwa@gmail.com\",\n        \"address\": \"100 Central Ave Pretoria\",\n        \"mobileNumber\": \"0762077899\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get Investor Products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/momentum-invest/investor-products?id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"momentum-invest",
+						"investor-products"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Investor Products",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/momentum-invest/investor-products?id=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"momentum-invest",
+								"investor-products"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 21 Sep 2023 13:18:41 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"productType\": \"RETIREMENT\",\n        \"name\": \"Retirement Annuity\",\n        \"currentBalance\": 500000\n    },\n    {\n        \"id\": 2,\n        \"productType\": \"SAVINGS\",\n        \"name\": \"Cash Savings\",\n        \"currentBalance\": 36000\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Withdraw FROM RETIREMENT- ERROR",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"investorId\": 1,\r\n    \"productType\": \"RETIREMENT\",\r\n    \"amount\": 5000,\r\n    \"bankingDetails\": {\r\n        \"accountOwner\": \"Tatenda Gone\",\r\n        \"accountNumber\": \"123456\",\r\n        \"bank\": \"FNB\",\r\n        \"accountType\": \"CHEQUE\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/momentum-invest/withdraw-investments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"momentum-invest",
+						"withdraw-investments"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Withdraw Investments",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"investorId\": 1,\r\n    \"productType\": \"RETIREMENT\",\r\n    \"amount\": 5000,\r\n    \"bankingDetails\": {\r\n        \"accountOwner\": \"Tatenda Gone\",\r\n        \"accountNumber\": \"123456\",\r\n        \"bank\": \"FNB\",\r\n        \"accountType\": \"CHEQUE\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/momentum-invest/withdraw-investments",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"momentum-invest",
+								"withdraw-investments"
+							]
+						}
+					},
+					"status": "Precondition Failed",
+					"code": 412,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 21 Sep 2023 13:19:11 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"6c391418-5efb-428e-8c11-467acc5c7073\",\n    \"message\": \"You cannot withdraw from a retirement fund if you are aged 65 years and below\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Withdraw ERROR INSIFFICIENT FUNDS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"investorId\": 1,\r\n    \"productType\": \"SAVINGS\",\r\n    \"amount\": 50000,\r\n    \"bankingDetails\": {\r\n        \"accountOwner\": \"Tatenda Gone\",\r\n        \"accountNumber\": \"123456\",\r\n        \"bank\": \"FNB\",\r\n        \"accountType\": \"CHEQUE\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/momentum-invest/withdraw-investments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"momentum-invest",
+						"withdraw-investments"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Withdraw ERROR INSIFFICIENT FUNDS",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"investorId\": 1,\r\n    \"productType\": \"SAVINGS\",\r\n    \"amount\": 50000,\r\n    \"bankingDetails\": {\r\n        \"accountOwner\": \"Tatenda Gone\",\r\n        \"accountNumber\": \"123456\",\r\n        \"bank\": \"FNB\",\r\n        \"accountType\": \"CHEQUE\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/momentum-invest/withdraw-investments",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"momentum-invest",
+								"withdraw-investments"
+							]
+						}
+					},
+					"status": "Precondition Failed",
+					"code": 412,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 21 Sep 2023 13:24:04 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"c1939d51-8ec7-4851-9611-64e37942fdfb\",\n    \"message\": \"Your withdrawal cannot be processed as you have specified a withdrawal amount which exceeds your current balance\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Withdraw ERROR 90% Exceeded",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"investorId\": 1,\r\n    \"productType\": \"SAVINGS\",\r\n    \"amount\": 35000,\r\n    \"bankingDetails\": {\r\n        \"accountOwner\": \"Tatenda Gone\",\r\n        \"accountNumber\": \"123456\",\r\n        \"bank\": \"FNB\",\r\n        \"accountType\": \"CHEQUE\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/momentum-invest/withdraw-investments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"momentum-invest",
+						"withdraw-investments"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Withdraw Investments Copy",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"investorId\": 1,\r\n    \"productType\": \"SAVINGS\",\r\n    \"amount\": 35000,\r\n    \"bankingDetails\": {\r\n        \"accountOwner\": \"Tatenda Gone\",\r\n        \"accountNumber\": \"123456\",\r\n        \"bank\": \"FNB\",\r\n        \"accountType\": \"CHEQUE\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/momentum-invest/withdraw-investments",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"momentum-invest",
+								"withdraw-investments"
+							]
+						}
+					},
+					"status": "Precondition Failed",
+					"code": 412,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 21 Sep 2023 13:26:03 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"95caa57a-c715-4d1f-9bac-c05d10c2848e\",\n    \"message\": \"You cannot withdraw more than 90% of your total investment\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Withdraw SUCCESS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"investorId\": 1,\r\n    \"productType\": \"SAVINGS\",\r\n    \"amount\": 1,\r\n    \"bankingDetails\": {\r\n        \"accountOwner\": \"Tatenda Gone\",\r\n        \"accountNumber\": \"123456\",\r\n        \"bank\": \"FNB\",\r\n        \"accountType\": \"CHEQUE\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/momentum-invest/withdraw-investments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"momentum-invest",
+						"withdraw-investments"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Withdraw SUCCESS",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"investorId\": 1,\r\n    \"productType\": \"SAVINGS\",\r\n    \"amount\": 1,\r\n    \"bankingDetails\": {\r\n        \"accountOwner\": \"Tatenda Gone\",\r\n        \"accountNumber\": \"123456\",\r\n        \"bank\": \"FNB\",\r\n        \"accountType\": \"CHEQUE\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/momentum-invest/withdraw-investments",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"momentum-invest",
+								"withdraw-investments"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 21 Sep 2023 13:32:51 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"investorId\": 1,\n    \"investorName\": \"Tatenda  Chiwandire\",\n    \"productType\": \"SAVINGS\",\n    \"amountWithdrawn\": 1,\n    \"balanceBeforeTransaction\": 35999,\n    \"closingBalance\": 35998\n}"
+				}
+			]
+		}
+	]
+}

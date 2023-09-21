@@ -1,0 +1,2 @@
+INSERT INTO investor(id, firstname, lastname, birth_date, address, email_address, mobile_number)
+VALUES (1, 'Tatenda', 'Chiwandire', '2000-01-01', '100 Central Ave Pretoria', 'ttchiwa@gmail.com', '0762077899');
